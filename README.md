@@ -1,3 +1,7 @@
-# GEOG489-Lesson1
+## Projects
 
-This repo contains two files of the results from the profiling component of the assignment: callgrind.profile_BChou (the function level profile file for viewing in QCacheGrind) and lprofile_BChou.txt (the line profiling results from line_profiler).
+Project Name  |  Description
+-------------  |-------------
+Map Tool Generator | Creates a shapefile and web map from text file(s) containing features without geometries
+Contour Generator | Creates contour lines by parsing all text file(s) in a target folder, which contain GPS coordinates of continuous point phemonena
+
