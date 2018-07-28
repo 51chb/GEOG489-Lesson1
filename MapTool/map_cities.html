@@ -1,0 +1,3364 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_f48b8be0991f4aec8d79e153098f46d7 {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_f48b8be0991f4aec8d79e153098f46d7" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_f48b8be0991f4aec8d79e153098f46d7 = L.map(
+                                  'map_f48b8be0991f4aec8d79e153098f46d7',
+                                  {center: [36.8259216525,-91.79318215730434],
+                                  zoom: 4,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_e09b44a108ba41bfb17c7c32af055105 = L.tileLayer(
+                'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+        
+    
+            var circle_marker_025bde87ef77454c8b863fe9e278841d = L.circleMarker(
+                [41.083064,-81.518485],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_b96a839be1564591a3f0e78897f37cce = L.popup({maxWidth: '300'});
+
+            
+                var html_d8c4946c64364be2932f238d9543a58d = $('<div id="html_d8c4946c64364be2932f238d9543a58d" style="width: 100.0%; height: 100.0%;"><strong>Akron, Ohio</strong><br>Change_from_Peak: <strong>-19.8</strong></div>')[0];
+                popup_b96a839be1564591a3f0e78897f37cce.setContent(html_d8c4946c64364be2932f238d9543a58d);
+            
+
+            circle_marker_025bde87ef77454c8b863fe9e278841d.bindPopup(popup_b96a839be1564591a3f0e78897f37cce);
+
+            
+        
+    
+            var circle_marker_c3ba6d4a2f8742a795b305946cea6cd6 = L.circleMarker(
+                [42.6511674,-73.754968],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_a4ab333bb387400a888dea2fb9a86b21 = L.popup({maxWidth: '300'});
+
+            
+                var html_911661b2e73444c2b5a71bf13d361b6b = $('<div id="html_911661b2e73444c2b5a71bf13d361b6b" style="width: 100.0%; height: 100.0%;"><strong>Albany, New York</strong><br>Change_from_Peak: <strong>-4.7</strong></div>')[0];
+                popup_a4ab333bb387400a888dea2fb9a86b21.setContent(html_911661b2e73444c2b5a71bf13d361b6b);
+            
+
+            circle_marker_c3ba6d4a2f8742a795b305946cea6cd6.bindPopup(popup_a4ab333bb387400a888dea2fb9a86b21);
+
+            
+        
+    
+            var circle_marker_5459d8be1daf43d594946b019a940ac3 = L.circleMarker(
+                [40.6022059,-75.4712794],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_34cdbb0f7b5b491bbd119b08379282db = L.popup({maxWidth: '300'});
+
+            
+                var html_edfaae81f48f4e84b090b9bad40d2d62 = $('<div id="html_edfaae81f48f4e84b090b9bad40d2d62" style="width: 100.0%; height: 100.0%;"><strong>Allentown, Pennsylvania</strong><br>Change_from_Peak: <strong>-19.9</strong></div>')[0];
+                popup_34cdbb0f7b5b491bbd119b08379282db.setContent(html_edfaae81f48f4e84b090b9bad40d2d62);
+            
+
+            circle_marker_5459d8be1daf43d594946b019a940ac3.bindPopup(popup_34cdbb0f7b5b491bbd119b08379282db);
+
+            
+        
+    
+            var circle_marker_bb3721dc846e44bdb148a382e836d5cf = L.circleMarker(
+                [33.7490987,-84.3901849],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_3b9991c092924825ace3248c49c7a3e3 = L.popup({maxWidth: '300'});
+
+            
+                var html_defb25886b7d4e4db6a2b432c666f901 = $('<div id="html_defb25886b7d4e4db6a2b432c666f901" style="width: 100.0%; height: 100.0%;"><strong>Atlanta, Georgia</strong><br>Change_from_Peak: <strong>-3.2</strong></div>')[0];
+                popup_3b9991c092924825ace3248c49c7a3e3.setContent(html_defb25886b7d4e4db6a2b432c666f901);
+            
+
+            circle_marker_bb3721dc846e44bdb148a382e836d5cf.bindPopup(popup_3b9991c092924825ace3248c49c7a3e3);
+
+            
+        
+    
+            var circle_marker_5b18389ed71f4fa88dd5748b27edd46b = L.circleMarker(
+                [33.4709714,-81.9748429],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_d3e0144a0c64444db6f6efdeccba3fef = L.popup({maxWidth: '300'});
+
+            
+                var html_29dfda3013fc4567876e578a6b114e9c = $('<div id="html_29dfda3013fc4567876e578a6b114e9c" style="width: 100.0%; height: 100.0%;"><strong>Augusta, Georgia</strong><br>Change_from_Peak: <strong>0.4</strong></div>')[0];
+                popup_d3e0144a0c64444db6f6efdeccba3fef.setContent(html_29dfda3013fc4567876e578a6b114e9c);
+            
+
+            circle_marker_5b18389ed71f4fa88dd5748b27edd46b.bindPopup(popup_d3e0144a0c64444db6f6efdeccba3fef);
+
+            
+        
+    
+            var circle_marker_4b523580db7d4bc19190782709670130 = L.circleMarker(
+                [30.2711286,-97.7436995],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_c6632bdd057847c098432cd588558e37 = L.popup({maxWidth: '300'});
+
+            
+                var html_1f75cd5bd2f64f2aa1e919119106fef1 = $('<div id="html_1f75cd5bd2f64f2aa1e919119106fef1" style="width: 100.0%; height: 100.0%;"><strong>Austin, Texas</strong><br>Change_from_Peak: <strong>72.8</strong></div>')[0];
+                popup_c6632bdd057847c098432cd588558e37.setContent(html_1f75cd5bd2f64f2aa1e919119106fef1);
+            
+
+            circle_marker_4b523580db7d4bc19190782709670130.bindPopup(popup_c6632bdd057847c098432cd588558e37);
+
+            
+        
+    
+            var circle_marker_f984570c927344f4907b89c3e3066a20 = L.circleMarker(
+                [35.3738712,-119.0194639],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_6da8646a17d448f5b8d0564bc8826c86 = L.popup({maxWidth: '300'});
+
+            
+                var html_547cda58338446418f92df0adb29080d = $('<div id="html_547cda58338446418f92df0adb29080d" style="width: 100.0%; height: 100.0%;"><strong>Bakersfield, California</strong><br>Change_from_Peak: <strong>-26.7</strong></div>')[0];
+                popup_6da8646a17d448f5b8d0564bc8826c86.setContent(html_547cda58338446418f92df0adb29080d);
+            
+
+            circle_marker_f984570c927344f4907b89c3e3066a20.bindPopup(popup_6da8646a17d448f5b8d0564bc8826c86);
+
+            
+        
+    
+            var circle_marker_29caa74aef3b418792a25715166ad972 = L.circleMarker(
+                [39.2908816,-76.610759],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_c5723bf2740740dfaf0a4d8a87f1b1c5 = L.popup({maxWidth: '300'});
+
+            
+                var html_c022a484818546249f5bc464f454c706 = $('<div id="html_c022a484818546249f5bc464f454c706" style="width: 100.0%; height: 100.0%;"><strong>Baltimore, Maryland</strong><br>Change_from_Peak: <strong>-19.4</strong></div>')[0];
+                popup_c5723bf2740740dfaf0a4d8a87f1b1c5.setContent(html_c022a484818546249f5bc464f454c706);
+            
+
+            circle_marker_29caa74aef3b418792a25715166ad972.bindPopup(popup_c5723bf2740740dfaf0a4d8a87f1b1c5);
+
+            
+        
+    
+            var circle_marker_291d427823ab47b791522b6feb96d68e = L.circleMarker(
+                [30.4507462,-91.154551],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_ce33949b965843b39277faaf492bad41 = L.popup({maxWidth: '300'});
+
+            
+                var html_02f896d3ba8c47d4989258fcf1002a6e = $('<div id="html_02f896d3ba8c47d4989258fcf1002a6e" style="width: 100.0%; height: 100.0%;"><strong>Baton Rouge, Louisiana</strong><br>Change_from_Peak: <strong>13.1</strong></div>')[0];
+                popup_ce33949b965843b39277faaf492bad41.setContent(html_02f896d3ba8c47d4989258fcf1002a6e);
+            
+
+            circle_marker_291d427823ab47b791522b6feb96d68e.bindPopup(popup_ce33949b965843b39277faaf492bad41);
+
+            
+        
+    
+            var circle_marker_d9cde770edf5400fb890507dc47cec28 = L.circleMarker(
+                [33.5206824,-86.8024326],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_d0c05392d37a41d1bc706e8fef9eb6a6 = L.popup({maxWidth: '300'});
+
+            
+                var html_4c8f32761cde4523b1091aae8527a249 = $('<div id="html_4c8f32761cde4523b1091aae8527a249" style="width: 100.0%; height: 100.0%;"><strong>Birmingham, Alabama</strong><br>Change_from_Peak: <strong>-11.8</strong></div>')[0];
+                popup_d0c05392d37a41d1bc706e8fef9eb6a6.setContent(html_4c8f32761cde4523b1091aae8527a249);
+            
+
+            circle_marker_d9cde770edf5400fb890507dc47cec28.bindPopup(popup_d0c05392d37a41d1bc706e8fef9eb6a6);
+
+            
+        
+    
+            var circle_marker_2d852236c24447e29d2c8605b05f4a41 = L.circleMarker(
+                [43.5988375,-116.243255063119],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_57bdbd9a21e5441a9f6e8645916e506b = L.popup({maxWidth: '300'});
+
+            
+                var html_d6911ad73bf3470e9eae63ad3c62cf96 = $('<div id="html_d6911ad73bf3470e9eae63ad3c62cf96" style="width: 100.0%; height: 100.0%;"><strong>Boise City, Idaho</strong><br>Change_from_Peak: <strong>6.5</strong></div>')[0];
+                popup_57bdbd9a21e5441a9f6e8645916e506b.setContent(html_d6911ad73bf3470e9eae63ad3c62cf96);
+            
+
+            circle_marker_2d852236c24447e29d2c8605b05f4a41.bindPopup(popup_57bdbd9a21e5441a9f6e8645916e506b);
+
+            
+        
+    
+            var circle_marker_4f964a0f53084840bb837b102da9efc2 = L.circleMarker(
+                [42.3604823,-71.0595678],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_2590693b2bad4ea8baafbcf1344dfdec = L.popup({maxWidth: '300'});
+
+            
+                var html_27fb8270537b4abb9d0c4f4fc9abe7c4 = $('<div id="html_27fb8270537b4abb9d0c4f4fc9abe7c4" style="width: 100.0%; height: 100.0%;"><strong>Boston, Massachusetts</strong><br>Change_from_Peak: <strong>5.0</strong></div>')[0];
+                popup_2590693b2bad4ea8baafbcf1344dfdec.setContent(html_27fb8270537b4abb9d0c4f4fc9abe7c4);
+            
+
+            circle_marker_4f964a0f53084840bb837b102da9efc2.bindPopup(popup_2590693b2bad4ea8baafbcf1344dfdec);
+
+            
+        
+    
+            var circle_marker_b73433249c204301869a1cc946278661 = L.circleMarker(
+                [41.1670412,-73.2048348],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_11b11a7235e14792a6a53ac499300ca9 = L.popup({maxWidth: '300'});
+
+            
+                var html_a9aeaa10b1ea4698a3376849e003fe69 = $('<div id="html_a9aeaa10b1ea4698a3376849e003fe69" style="width: 100.0%; height: 100.0%;"><strong>Bridgeport, Connecticut</strong><br>Change_from_Peak: <strong>-20.7</strong></div>')[0];
+                popup_11b11a7235e14792a6a53ac499300ca9.setContent(html_a9aeaa10b1ea4698a3376849e003fe69);
+            
+
+            circle_marker_b73433249c204301869a1cc946278661.bindPopup(popup_11b11a7235e14792a6a53ac499300ca9);
+
+            
+        
+    
+            var circle_marker_cefddea2a29646f99e53d17732ed3af2 = L.circleMarker(
+                [42.8867166,-78.8783922],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_f0fb3f74f3ba414dae846523988bd96d = L.popup({maxWidth: '300'});
+
+            
+                var html_e825cc48b5ba41bd936562780f2a4f22 = $('<div id="html_e825cc48b5ba41bd936562780f2a4f22" style="width: 100.0%; height: 100.0%;"><strong>Buffalo, New York</strong><br>Change_from_Peak: <strong>39.5</strong></div>')[0];
+                popup_f0fb3f74f3ba414dae846523988bd96d.setContent(html_e825cc48b5ba41bd936562780f2a4f22);
+            
+
+            circle_marker_cefddea2a29646f99e53d17732ed3af2.bindPopup(popup_f0fb3f74f3ba414dae846523988bd96d);
+
+            
+        
+    
+            var circle_marker_4006b5963f494ec5a8a3d2c4a376349b = L.circleMarker(
+                [26.6059432,-81.9806771],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_1a5436e048724e9f8b516308e327f03a = L.popup({maxWidth: '300'});
+
+            
+                var html_3b20da297122462595a31903fd8c382c = $('<div id="html_3b20da297122462595a31903fd8c382c" style="width: 100.0%; height: 100.0%;"><strong>Cape Coral, Florida</strong><br>Change_from_Peak: <strong>-22.8</strong></div>')[0];
+                popup_1a5436e048724e9f8b516308e327f03a.setContent(html_3b20da297122462595a31903fd8c382c);
+            
+
+            circle_marker_4006b5963f494ec5a8a3d2c4a376349b.bindPopup(popup_1a5436e048724e9f8b516308e327f03a);
+
+            
+        
+    
+            var circle_marker_cc8be0ce282c4517a3e0743dd2cee1e7 = L.circleMarker(
+                [32.7876012,-79.9402728],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_ea2d67cc60ec4a2f9703bdefd992bc63 = L.popup({maxWidth: '300'});
+
+            
+                var html_d569410d265040c0bd38ce1fff650b6a = $('<div id="html_d569410d265040c0bd38ce1fff650b6a" style="width: 100.0%; height: 100.0%;"><strong>Charleston, South Carolina</strong><br>Change_from_Peak: <strong>12.0</strong></div>')[0];
+                popup_ea2d67cc60ec4a2f9703bdefd992bc63.setContent(html_d569410d265040c0bd38ce1fff650b6a);
+            
+
+            circle_marker_cc8be0ce282c4517a3e0743dd2cee1e7.bindPopup(popup_ea2d67cc60ec4a2f9703bdefd992bc63);
+
+            
+        
+    
+            var circle_marker_3a6b91cb7b924ac986ec36c5f5fb4015 = L.circleMarker(
+                [35.2270869,-80.8431268],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_c4b7c7f0738246f18908772e9c3f5276 = L.popup({maxWidth: '300'});
+
+            
+                var html_d54a169f3789491680fb674a8c199bdb = $('<div id="html_d54a169f3789491680fb674a8c199bdb" style="width: 100.0%; height: 100.0%;"><strong>Charlotte, North Carolina</strong><br>Change_from_Peak: <strong>21.7</strong></div>')[0];
+                popup_c4b7c7f0738246f18908772e9c3f5276.setContent(html_d54a169f3789491680fb674a8c199bdb);
+            
+
+            circle_marker_3a6b91cb7b924ac986ec36c5f5fb4015.bindPopup(popup_c4b7c7f0738246f18908772e9c3f5276);
+
+            
+        
+    
+            var circle_marker_42f28c727599480f93fa74ef41056e4e = L.circleMarker(
+                [35.0456297,-85.3096801],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_7079337cd46143aa8f9e2c169f7bf39d = L.popup({maxWidth: '300'});
+
+            
+                var html_564a144be0344bafb8d49567b533e1d8 = $('<div id="html_564a144be0344bafb8d49567b533e1d8" style="width: 100.0%; height: 100.0%;"><strong>Chattanooga, Tennessee</strong><br>Change_from_Peak: <strong>15.7</strong></div>')[0];
+                popup_7079337cd46143aa8f9e2c169f7bf39d.setContent(html_564a144be0344bafb8d49567b533e1d8);
+            
+
+            circle_marker_42f28c727599480f93fa74ef41056e4e.bindPopup(popup_7079337cd46143aa8f9e2c169f7bf39d);
+
+            
+        
+    
+            var circle_marker_0bd62c55dabe4a379dae57e401d7a2fb = L.circleMarker(
+                [41.8755546,-87.6244212],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_53334cb300534ec69571a4e309ffbefe = L.popup({maxWidth: '300'});
+
+            
+                var html_757be11e2c8347499dd393b1007ac8a2 = $('<div id="html_757be11e2c8347499dd393b1007ac8a2" style="width: 100.0%; height: 100.0%;"><strong>Chicago, Illinois</strong><br>Change_from_Peak: <strong>-17.1</strong></div>')[0];
+                popup_53334cb300534ec69571a4e309ffbefe.setContent(html_757be11e2c8347499dd393b1007ac8a2);
+            
+
+            circle_marker_0bd62c55dabe4a379dae57e401d7a2fb.bindPopup(popup_53334cb300534ec69571a4e309ffbefe);
+
+            
+        
+    
+            var circle_marker_114f37a959cd4f88968545b9f2fa7c22 = L.circleMarker(
+                [39.779974,-82.356043],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_711b9598cd094c1680eb8a7a670d7369 = L.popup({maxWidth: '300'});
+
+            
+                var html_f28b41f9bb1b4526a9b5622306248030 = $('<div id="html_f28b41f9bb1b4526a9b5622306248030" style="width: 100.0%; height: 100.0%;"><strong>Cinncinnati, Ohio</strong><br>Change_from_Peak: <strong>-3.4</strong></div>')[0];
+                popup_711b9598cd094c1680eb8a7a670d7369.setContent(html_f28b41f9bb1b4526a9b5622306248030);
+            
+
+            circle_marker_114f37a959cd4f88968545b9f2fa7c22.bindPopup(popup_711b9598cd094c1680eb8a7a670d7369);
+
+            
+        
+    
+            var circle_marker_7ba6e561d3b547c1b36289e49f78c042 = L.circleMarker(
+                [41.5051613,-81.6934446],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_80591ab750034eceadc7861c8b148b85 = L.popup({maxWidth: '300'});
+
+            
+                var html_0514d8803c59447f8e3a203efe1d6f7c = $('<div id="html_0514d8803c59447f8e3a203efe1d6f7c" style="width: 100.0%; height: 100.0%;"><strong>Cleveland, Ohio</strong><br>Change_from_Peak: <strong>-26.2</strong></div>')[0];
+                popup_80591ab750034eceadc7861c8b148b85.setContent(html_0514d8803c59447f8e3a203efe1d6f7c);
+            
+
+            circle_marker_7ba6e561d3b547c1b36289e49f78c042.bindPopup(popup_80591ab750034eceadc7861c8b148b85);
+
+            
+        
+    
+            var circle_marker_2577c47e60ca4c608415742d0f7c734c = L.circleMarker(
+                [38.8339578,-104.8253485],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_4e8a3165351041e0b8ab365117e6b24c = L.popup({maxWidth: '300'});
+
+            
+                var html_a16172cfd0e942e791c2162c005dee40 = $('<div id="html_a16172cfd0e942e791c2162c005dee40" style="width: 100.0%; height: 100.0%;"><strong>Colorado Springs, Colorado</strong><br>Change_from_Peak: <strong>21.7</strong></div>')[0];
+                popup_4e8a3165351041e0b8ab365117e6b24c.setContent(html_a16172cfd0e942e791c2162c005dee40);
+            
+
+            circle_marker_2577c47e60ca4c608415742d0f7c734c.bindPopup(popup_4e8a3165351041e0b8ab365117e6b24c);
+
+            
+        
+    
+            var circle_marker_a597b17529b44a03a6d280c176a7d6c7 = L.circleMarker(
+                [34.0007493,-81.0343313],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_02c83139a33c408390410cca80b6f345 = L.popup({maxWidth: '300'});
+
+            
+                var html_5a7b6a4a8120427f9cfcdcc0ff2d732c = $('<div id="html_5a7b6a4a8120427f9cfcdcc0ff2d732c" style="width: 100.0%; height: 100.0%;"><strong>Columbia, South Carolina</strong><br>Change_from_Peak: <strong>-0.4</strong></div>')[0];
+                popup_02c83139a33c408390410cca80b6f345.setContent(html_5a7b6a4a8120427f9cfcdcc0ff2d732c);
+            
+
+            circle_marker_a597b17529b44a03a6d280c176a7d6c7.bindPopup(popup_02c83139a33c408390410cca80b6f345);
+
+            
+        
+    
+            var circle_marker_0d44735d261e4bb38599db2ca0934a62 = L.circleMarker(
+                [39.9622601,-83.0007065],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_9184f67de39d4b80922e98c2f28c80db = L.popup({maxWidth: '300'});
+
+            
+                var html_7fa201b70c9a44e5aeb90a79fa673235 = $('<div id="html_7fa201b70c9a44e5aeb90a79fa673235" style="width: 100.0%; height: 100.0%;"><strong>Columbus, Ohio</strong><br>Change_from_Peak: <strong>3.3</strong></div>')[0];
+                popup_9184f67de39d4b80922e98c2f28c80db.setContent(html_7fa201b70c9a44e5aeb90a79fa673235);
+            
+
+            circle_marker_0d44735d261e4bb38599db2ca0934a62.bindPopup(popup_9184f67de39d4b80922e98c2f28c80db);
+
+            
+        
+    
+            var circle_marker_91ca86c6b75a4cf4891697b4f020171b = L.circleMarker(
+                [32.7762719,-96.7968559],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_e7ec49c809b94e56a6a16325c5999690 = L.popup({maxWidth: '300'});
+
+            
+                var html_432ff68ebc234815961e419a65ec5b80 = $('<div id="html_432ff68ebc234815961e419a65ec5b80" style="width: 100.0%; height: 100.0%;"><strong>Dallas, Texas</strong><br>Change_from_Peak: <strong>53.0</strong></div>')[0];
+                popup_e7ec49c809b94e56a6a16325c5999690.setContent(html_432ff68ebc234815961e419a65ec5b80);
+            
+
+            circle_marker_91ca86c6b75a4cf4891697b4f020171b.bindPopup(popup_e7ec49c809b94e56a6a16325c5999690);
+
+            
+        
+    
+            var circle_marker_480311dfe1dd4ef29fe795926c173657 = L.circleMarker(
+                [39.7589478,-84.1916069],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_e68d5cd5795840fdb00b07b1345e7dc9 = L.popup({maxWidth: '300'});
+
+            
+                var html_f4cb1c24c1a5437f9834a938e81f0f6c = $('<div id="html_f4cb1c24c1a5437f9834a938e81f0f6c" style="width: 100.0%; height: 100.0%;"><strong>Dayton, Ohio</strong><br>Change_from_Peak: <strong>-10.8</strong></div>')[0];
+                popup_e68d5cd5795840fdb00b07b1345e7dc9.setContent(html_f4cb1c24c1a5437f9834a938e81f0f6c);
+            
+
+            circle_marker_480311dfe1dd4ef29fe795926c173657.bindPopup(popup_e68d5cd5795840fdb00b07b1345e7dc9);
+
+            
+        
+    
+            var circle_marker_ae47f250bea045e9b8af570ae6493e23 = L.circleMarker(
+                [28.9005446,-81.2636738],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_b1b6ab6bc6b14defb0fc0af55276da29 = L.popup({maxWidth: '300'});
+
+            
+                var html_ad5442bf97b641e5b887bcf2d180202b = $('<div id="html_ad5442bf97b641e5b887bcf2d180202b" style="width: 100.0%; height: 100.0%;"><strong>Deltona, Florida</strong><br>Change_from_Peak: <strong>-20.5</strong></div>')[0];
+                popup_b1b6ab6bc6b14defb0fc0af55276da29.setContent(html_ad5442bf97b641e5b887bcf2d180202b);
+            
+
+            circle_marker_ae47f250bea045e9b8af570ae6493e23.bindPopup(popup_b1b6ab6bc6b14defb0fc0af55276da29);
+
+            
+        
+    
+            var circle_marker_a5c43321036d4a37aefa2bd6fbd1f598 = L.circleMarker(
+                [39.7391428,-104.984696],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_9a9d60492b974cfc9523b9edf1843539 = L.popup({maxWidth: '300'});
+
+            
+                var html_9f7f05c2da3848759898c0008c645ee7 = $('<div id="html_9f7f05c2da3848759898c0008c645ee7" style="width: 100.0%; height: 100.0%;"><strong>Denver, Colorado</strong><br>Change_from_Peak: <strong>54.9</strong></div>')[0];
+                popup_9a9d60492b974cfc9523b9edf1843539.setContent(html_9f7f05c2da3848759898c0008c645ee7);
+            
+
+            circle_marker_a5c43321036d4a37aefa2bd6fbd1f598.bindPopup(popup_9a9d60492b974cfc9523b9edf1843539);
+
+            
+        
+    
+            var circle_marker_1d67738eab5b40d7a27a875119e6ed12 = L.circleMarker(
+                [41.5910641,-93.6037149],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_808970e273a04184b46a5a3d45d58819 = L.popup({maxWidth: '300'});
+
+            
+                var html_7994d0880a56403987e27971b0fe0e8a = $('<div id="html_7994d0880a56403987e27971b0fe0e8a" style="width: 100.0%; height: 100.0%;"><strong>Des Moines, Iowa</strong><br>Change_from_Peak: <strong>13.5</strong></div>')[0];
+                popup_808970e273a04184b46a5a3d45d58819.setContent(html_7994d0880a56403987e27971b0fe0e8a);
+            
+
+            circle_marker_1d67738eab5b40d7a27a875119e6ed12.bindPopup(popup_808970e273a04184b46a5a3d45d58819);
+
+            
+        
+    
+            var circle_marker_e037a96a12b34d66a8e95c43c4752c80 = L.circleMarker(
+                [42.3486635,-83.0567375],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_eda2cb3c262c4b0faabb3689db583800 = L.popup({maxWidth: '300'});
+
+            
+                var html_0d6b5b98edf5458f846499d609e0e1f4 = $('<div id="html_0d6b5b98edf5458f846499d609e0e1f4" style="width: 100.0%; height: 100.0%;"><strong>Detroit, Michigan</strong><br>Change_from_Peak: <strong>-28.3</strong></div>')[0];
+                popup_eda2cb3c262c4b0faabb3689db583800.setContent(html_0d6b5b98edf5458f846499d609e0e1f4);
+            
+
+            circle_marker_e037a96a12b34d66a8e95c43c4752c80.bindPopup(popup_eda2cb3c262c4b0faabb3689db583800);
+
+            
+        
+    
+            var circle_marker_e5fc48a4847c490180d03077057cb0a8 = L.circleMarker(
+                [35.9966551,-78.9018115],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_bd48401ff6e14c1b9006dfc1561f9a04 = L.popup({maxWidth: '300'});
+
+            
+                var html_2f5ef72015d14066b6439973e8ad5826 = $('<div id="html_2f5ef72015d14066b6439973e8ad5826" style="width: 100.0%; height: 100.0%;"><strong>Durham, North Carolina</strong><br>Change_from_Peak: <strong>22.4</strong></div>')[0];
+                popup_bd48401ff6e14c1b9006dfc1561f9a04.setContent(html_2f5ef72015d14066b6439973e8ad5826);
+            
+
+            circle_marker_e5fc48a4847c490180d03077057cb0a8.bindPopup(popup_bd48401ff6e14c1b9006dfc1561f9a04);
+
+            
+        
+    
+            var circle_marker_b0996cfde8d64a57b37b099a702072e7 = L.circleMarker(
+                [36.0625843,-94.1574328],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_50d7914014a247b189fad604a084c161 = L.popup({maxWidth: '300'});
+
+            
+                var html_f3ff8d49d6d0486ba5206bbc4d9a2959 = $('<div id="html_f3ff8d49d6d0486ba5206bbc4d9a2959" style="width: 100.0%; height: 100.0%;"><strong>Fayetteville, Arkansas</strong><br>Change_from_Peak: <strong>4.7</strong></div>')[0];
+                popup_50d7914014a247b189fad604a084c161.setContent(html_f3ff8d49d6d0486ba5206bbc4d9a2959);
+            
+
+            circle_marker_b0996cfde8d64a57b37b099a702072e7.bindPopup(popup_50d7914014a247b189fad604a084c161);
+
+            
+        
+    
+            var circle_marker_e328d8ec1de14b1bad77255eae183bdc = L.circleMarker(
+                [36.7295295,-119.708861260756],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_095305e73e7947898b62dbb50bcea44d = L.popup({maxWidth: '300'});
+
+            
+                var html_a3216d1c146f49bf8c6a1e14ca7a515e = $('<div id="html_a3216d1c146f49bf8c6a1e14ca7a515e" style="width: 100.0%; height: 100.0%;"><strong>Fresno, California</strong><br>Change_from_Peak: <strong>-26.7</strong></div>')[0];
+                popup_095305e73e7947898b62dbb50bcea44d.setContent(html_a3216d1c146f49bf8c6a1e14ca7a515e);
+            
+
+            circle_marker_e328d8ec1de14b1bad77255eae183bdc.bindPopup(popup_095305e73e7947898b62dbb50bcea44d);
+
+            
+        
+    
+            var circle_marker_79ddae44468c4440947b6f992b62bbe0 = L.circleMarker(
+                [42.9632405,-85.6678639],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_47ec1ae218f4433ca2718ca41c610639 = L.popup({maxWidth: '300'});
+
+            
+                var html_72d022d308a84839b7a0ec5db03f7cd1 = $('<div id="html_72d022d308a84839b7a0ec5db03f7cd1" style="width: 100.0%; height: 100.0%;"><strong>Grand Rapids, Michigan</strong><br>Change_from_Peak: <strong>12.4</strong></div>')[0];
+                popup_47ec1ae218f4433ca2718ca41c610639.setContent(html_72d022d308a84839b7a0ec5db03f7cd1);
+            
+
+            circle_marker_79ddae44468c4440947b6f992b62bbe0.bindPopup(popup_47ec1ae218f4433ca2718ca41c610639);
+
+            
+        
+    
+            var circle_marker_34219b9f82eb4218a04114c77594042d = L.circleMarker(
+                [36.0726355,-79.7919754],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_7a190c846de04144833be30358ba69ea = L.popup({maxWidth: '300'});
+
+            
+                var html_27d5960aea584d6aa0953788fd459c75 = $('<div id="html_27d5960aea584d6aa0953788fd459c75" style="width: 100.0%; height: 100.0%;"><strong>Greensboro, North Carolina</strong><br>Change_from_Peak: <strong>-5.5</strong></div>')[0];
+                popup_7a190c846de04144833be30358ba69ea.setContent(html_27d5960aea584d6aa0953788fd459c75);
+            
+
+            circle_marker_34219b9f82eb4218a04114c77594042d.bindPopup(popup_7a190c846de04144833be30358ba69ea);
+
+            
+        
+    
+            var circle_marker_9e612dcf17b543808e663cde564dd99e = L.circleMarker(
+                [34.851354,-82.3984882],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_07601f4499654530b47627c26e4e4bd6 = L.popup({maxWidth: '300'});
+
+            
+                var html_60a651eb08bf4cd4a27d7675e69fec01 = $('<div id="html_60a651eb08bf4cd4a27d7675e69fec01" style="width: 100.0%; height: 100.0%;"><strong>Greenville, South Carolina</strong><br>Change_from_Peak: <strong>24.7</strong></div>')[0];
+                popup_07601f4499654530b47627c26e4e4bd6.setContent(html_60a651eb08bf4cd4a27d7675e69fec01);
+            
+
+            circle_marker_9e612dcf17b543808e663cde564dd99e.bindPopup(popup_07601f4499654530b47627c26e4e4bd6);
+
+            
+        
+    
+            var circle_marker_7b1c665767ea40d997b8669e968a1939 = L.circleMarker(
+                [40.2663107,-76.8861122],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_9f01b08f8d754229b814e5b84e57e956 = L.popup({maxWidth: '300'});
+
+            
+                var html_e36113d89cc04850bacab27178bc7f75 = $('<div id="html_e36113d89cc04850bacab27178bc7f75" style="width: 100.0%; height: 100.0%;"><strong>Harrisburg, Pennsylvania</strong><br>Change_from_Peak: <strong>-0.5</strong></div>')[0];
+                popup_9f01b08f8d754229b814e5b84e57e956.setContent(html_e36113d89cc04850bacab27178bc7f75);
+            
+
+            circle_marker_7b1c665767ea40d997b8669e968a1939.bindPopup(popup_9f01b08f8d754229b814e5b84e57e956);
+
+            
+        
+    
+            var circle_marker_02d6d5b4bdc44a9d8ed067ac7f0a7168 = L.circleMarker(
+                [41.7645491,-72.6908673],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_b5c36ff982c74ba99b1c3c4b7112547b = L.popup({maxWidth: '300'});
+
+            
+                var html_8d13b575398c4c5098c8756955e8c452 = $('<div id="html_8d13b575398c4c5098c8756955e8c452" style="width: 100.0%; height: 100.0%;"><strong>Hartford, Connecticut</strong><br>Change_from_Peak: <strong>-14.5</strong></div>')[0];
+                popup_b5c36ff982c74ba99b1c3c4b7112547b.setContent(html_8d13b575398c4c5098c8756955e8c452);
+            
+
+            circle_marker_02d6d5b4bdc44a9d8ed067ac7f0a7168.bindPopup(popup_b5c36ff982c74ba99b1c3c4b7112547b);
+
+            
+        
+    
+            var circle_marker_1fafec0115a44d0d994d38525b18fd88 = L.circleMarker(
+                [21.304547,-157.8556764],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_e867a102d54f4e32b3b1984672febbeb = L.popup({maxWidth: '300'});
+
+            
+                var html_a9a8166139034415adb736a8b8d32714 = $('<div id="html_a9a8166139034415adb736a8b8d32714" style="width: 100.0%; height: 100.0%;"><strong>Honolulu, Hawaii</strong><br>Change_from_Peak: <strong>36.1</strong></div>')[0];
+                popup_e867a102d54f4e32b3b1984672febbeb.setContent(html_a9a8166139034415adb736a8b8d32714);
+            
+
+            circle_marker_1fafec0115a44d0d994d38525b18fd88.bindPopup(popup_e867a102d54f4e32b3b1984672febbeb);
+
+            
+        
+    
+            var circle_marker_90914a67c6494f0abfa093e81395c4e1 = L.circleMarker(
+                [29.7589382,-95.3676974],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_7140cf29a6f646d5a546e83b352cb800 = L.popup({maxWidth: '300'});
+
+            
+                var html_b3805aa4d72a4436892353c4bb452b0e = $('<div id="html_b3805aa4d72a4436892353c4bb452b0e" style="width: 100.0%; height: 100.0%;"><strong>Houston, Texas</strong><br>Change_from_Peak: <strong>30.2</strong></div>')[0];
+                popup_7140cf29a6f646d5a546e83b352cb800.setContent(html_b3805aa4d72a4436892353c4bb452b0e);
+            
+
+            circle_marker_90914a67c6494f0abfa093e81395c4e1.bindPopup(popup_7140cf29a6f646d5a546e83b352cb800);
+
+            
+        
+    
+            var circle_marker_dfc36418080f485c90dc5ca512a3806c = L.circleMarker(
+                [30.3321838,-81.655651],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_8575ee7a9fe6473d8aa991206d73f1d3 = L.popup({maxWidth: '300'});
+
+            
+                var html_c816d747f2fb4aa7ade624d230a96011 = $('<div id="html_c816d747f2fb4aa7ade624d230a96011" style="width: 100.0%; height: 100.0%;"><strong>Jacksonville, Florida</strong><br>Change_from_Peak: <strong>-16.4</strong></div>')[0];
+                popup_8575ee7a9fe6473d8aa991206d73f1d3.setContent(html_c816d747f2fb4aa7ade624d230a96011);
+            
+
+            circle_marker_dfc36418080f485c90dc5ca512a3806c.bindPopup(popup_8575ee7a9fe6473d8aa991206d73f1d3);
+
+            
+        
+    
+            var circle_marker_5d3b9c6936c5477faf2522cdde1b1b01 = L.circleMarker(
+                [35.9603948,-83.9210261],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_61cb9b05ae8e46edbf7cc514c02822f8 = L.popup({maxWidth: '300'});
+
+            
+                var html_7cb96110817e412787f0fc685123da2e = $('<div id="html_7cb96110817e412787f0fc685123da2e" style="width: 100.0%; height: 100.0%;"><strong>Knoxville, Tennessee</strong><br>Change_from_Peak: <strong>13.5</strong></div>')[0];
+                popup_61cb9b05ae8e46edbf7cc514c02822f8.setContent(html_7cb96110817e412787f0fc685123da2e);
+            
+
+            circle_marker_5d3b9c6936c5477faf2522cdde1b1b01.bindPopup(popup_61cb9b05ae8e46edbf7cc514c02822f8);
+
+            
+        
+    
+            var circle_marker_da481240a1024cf6b75f4fa612b774ff = L.circleMarker(
+                [28.0394654,-81.9498042],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_7ae2c157bb7f4497b7d0606205bfe57f = L.popup({maxWidth: '300'});
+
+            
+                var html_30cb889ed7df4edda454a39f1e8dffb1 = $('<div id="html_30cb889ed7df4edda454a39f1e8dffb1" style="width: 100.0%; height: 100.0%;"><strong>Lakeland, Florida</strong><br>Change_from_Peak: <strong>-23.2</strong></div>')[0];
+                popup_7ae2c157bb7f4497b7d0606205bfe57f.setContent(html_30cb889ed7df4edda454a39f1e8dffb1);
+            
+
+            circle_marker_da481240a1024cf6b75f4fa612b774ff.bindPopup(popup_7ae2c157bb7f4497b7d0606205bfe57f);
+
+            
+        
+    
+            var circle_marker_bee1725dac6a4c77bc36156056955f54 = L.circleMarker(
+                [40.03813,-76.3056686],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_67d75357a4944290a5e90f29a261dc7c = L.popup({maxWidth: '300'});
+
+            
+                var html_df2ba3b389324c4192ac1bebf0f8290a = $('<div id="html_df2ba3b389324c4192ac1bebf0f8290a" style="width: 100.0%; height: 100.0%;"><strong>Lancaster, Pennsylvania</strong><br>Change_from_Peak: <strong>13.8</strong></div>')[0];
+                popup_67d75357a4944290a5e90f29a261dc7c.setContent(html_df2ba3b389324c4192ac1bebf0f8290a);
+            
+
+            circle_marker_bee1725dac6a4c77bc36156056955f54.bindPopup(popup_67d75357a4944290a5e90f29a261dc7c);
+
+            
+        
+    
+            var circle_marker_ca40becc96214273acaaf0d293698130 = L.circleMarker(
+                [42.7337712,-84.5553805],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_f4288e9eb6fc45eb8637335a546e01ac = L.popup({maxWidth: '300'});
+
+            
+                var html_07a5d3d5088542ccb4ac44ce44e64aa3 = $('<div id="html_07a5d3d5088542ccb4ac44ce44e64aa3" style="width: 100.0%; height: 100.0%;"><strong>Lansing, Michigan</strong><br>Change_from_Peak: <strong>-23.6</strong></div>')[0];
+                popup_f4288e9eb6fc45eb8637335a546e01ac.setContent(html_07a5d3d5088542ccb4ac44ce44e64aa3);
+            
+
+            circle_marker_ca40becc96214273acaaf0d293698130.bindPopup(popup_f4288e9eb6fc45eb8637335a546e01ac);
+
+            
+        
+    
+            var circle_marker_9de2e84123764c1e9dca088693266a3c = L.circleMarker(
+                [36.1662859,-115.149225],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_7506b3c52fcb46c6adf77d6671c09500 = L.popup({maxWidth: '300'});
+
+            
+                var html_7b848fed324840fd8d97d930acc938dd = $('<div id="html_7b848fed324840fd8d97d930acc938dd" style="width: 100.0%; height: 100.0%;"><strong>Las Vegas, Nevada</strong><br>Change_from_Peak: <strong>-31.4</strong></div>')[0];
+                popup_7506b3c52fcb46c6adf77d6671c09500.setContent(html_7b848fed324840fd8d97d930acc938dd);
+            
+
+            circle_marker_9de2e84123764c1e9dca088693266a3c.bindPopup(popup_7506b3c52fcb46c6adf77d6671c09500);
+
+            
+        
+    
+            var circle_marker_14eca7ded84f49d88f53aa2b1dae7ecc = L.circleMarker(
+                [38.0464066,-84.4970393],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_91b04eaa9076451e8a7c3275d546776b = L.popup({maxWidth: '300'});
+
+            
+                var html_0bcca869805541e09ac041013b505b03 = $('<div id="html_0bcca869805541e09ac041013b505b03" style="width: 100.0%; height: 100.0%;"><strong>Lexington, Kentucky</strong><br>Change_from_Peak: <strong>4.1</strong></div>')[0];
+                popup_91b04eaa9076451e8a7c3275d546776b.setContent(html_0bcca869805541e09ac041013b505b03);
+            
+
+            circle_marker_14eca7ded84f49d88f53aa2b1dae7ecc.bindPopup(popup_91b04eaa9076451e8a7c3275d546776b);
+
+            
+        
+    
+            var circle_marker_b80f547640884b978f093eb53731d186 = L.circleMarker(
+                [34.7464809,-92.2895948],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_b06792ae7ba5493299c1b5561302c2ed = L.popup({maxWidth: '300'});
+
+            
+                var html_bc693fc33ef74df3b1ea85d9a394588e = $('<div id="html_bc693fc33ef74df3b1ea85d9a394588e" style="width: 100.0%; height: 100.0%;"><strong>Little Rock, Arkansas</strong><br>Change_from_Peak: <strong>-2.0</strong></div>')[0];
+                popup_b06792ae7ba5493299c1b5561302c2ed.setContent(html_bc693fc33ef74df3b1ea85d9a394588e);
+            
+
+            circle_marker_b80f547640884b978f093eb53731d186.bindPopup(popup_b06792ae7ba5493299c1b5561302c2ed);
+
+            
+        
+    
+            var circle_marker_a79926650bdc472983445455aa96e0d1 = L.circleMarker(
+                [34.1430079,-118.14176172581],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_8deeb16abc754555ac3cb5eb400428fc = L.popup({maxWidth: '300'});
+
+            
+                var html_388d9a5bfae84c3983257bfbd59cbcbe = $('<div id="html_388d9a5bfae84c3983257bfbd59cbcbe" style="width: 100.0%; height: 100.0%;"><strong>Los Angeles, California</strong><br>Change_from_Peak: <strong>-1.3</strong></div>')[0];
+                popup_8deeb16abc754555ac3cb5eb400428fc.setContent(html_388d9a5bfae84c3983257bfbd59cbcbe);
+            
+
+            circle_marker_a79926650bdc472983445455aa96e0d1.bindPopup(popup_8deeb16abc754555ac3cb5eb400428fc);
+
+            
+        
+    
+            var circle_marker_ac9ffb3012d242ebb6db97530d869999 = L.circleMarker(
+                [38.2542376,-85.759407],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_870a4f9a79d64b6e8f655b490a349694 = L.popup({maxWidth: '300'});
+
+            
+                var html_0a8dd3064579430cba23b733dee3df32 = $('<div id="html_0a8dd3064579430cba23b733dee3df32" style="width: 100.0%; height: 100.0%;"><strong>Louisville, Kentucky</strong><br>Change_from_Peak: <strong>15.6</strong></div>')[0];
+                popup_870a4f9a79d64b6e8f655b490a349694.setContent(html_0a8dd3064579430cba23b733dee3df32);
+            
+
+            circle_marker_ac9ffb3012d242ebb6db97530d869999.bindPopup(popup_870a4f9a79d64b6e8f655b490a349694);
+
+            
+        
+    
+            var circle_marker_e08b3ee14952475ba1d6fa283aefbf34 = L.circleMarker(
+                [43.074761,-89.3837613],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_8856643b52a94fa096593f3279f50e43 = L.popup({maxWidth: '300'});
+
+            
+                var html_2a12871105714892aa68f46a0a4ec04b = $('<div id="html_2a12871105714892aa68f46a0a4ec04b" style="width: 100.0%; height: 100.0%;"><strong>Madison, Wisconsin</strong><br>Change_from_Peak: <strong>19.9</strong></div>')[0];
+                popup_8856643b52a94fa096593f3279f50e43.setContent(html_2a12871105714892aa68f46a0a4ec04b);
+            
+
+            circle_marker_e08b3ee14952475ba1d6fa283aefbf34.bindPopup(popup_8856643b52a94fa096593f3279f50e43);
+
+            
+        
+    
+            var circle_marker_e7412ec02ce64f688c24315fa6afdf20 = L.circleMarker(
+                [26.2043691,-98.230082],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_bafb922a187c4f88ae02d31debe666f1 = L.popup({maxWidth: '300'});
+
+            
+                var html_c9138224078e47c58f5628e33b067e40 = $('<div id="html_c9138224078e47c58f5628e33b067e40" style="width: 100.0%; height: 100.0%;"><strong>McAllen, Texas</strong><br>Change_from_Peak: <strong>26.5</strong></div>')[0];
+                popup_bafb922a187c4f88ae02d31debe666f1.setContent(html_c9138224078e47c58f5628e33b067e40);
+            
+
+            circle_marker_e7412ec02ce64f688c24315fa6afdf20.bindPopup(popup_bafb922a187c4f88ae02d31debe666f1);
+
+            
+        
+    
+            var circle_marker_9a3a0896a608480ea29f51dd71ce7906 = L.circleMarker(
+                [35.1490215,-90.0516285],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_a43e15dcebfb40bcb02346e78a0396c3 = L.popup({maxWidth: '300'});
+
+            
+                var html_2898502fb5ea46559ccc9a663f480a7c = $('<div id="html_2898502fb5ea46559ccc9a663f480a7c" style="width: 100.0%; height: 100.0%;"><strong>Memphis, Tennessee</strong><br>Change_from_Peak: <strong>-14.6</strong></div>')[0];
+                popup_a43e15dcebfb40bcb02346e78a0396c3.setContent(html_2898502fb5ea46559ccc9a663f480a7c);
+            
+
+            circle_marker_9a3a0896a608480ea29f51dd71ce7906.bindPopup(popup_a43e15dcebfb40bcb02346e78a0396c3);
+
+            
+        
+    
+            var circle_marker_fc08d18d4013420b9a013a276102eecc = L.circleMarker(
+                [25.7742658,-80.1936589],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_343afecca4724ac69ab08fb022a11810 = L.popup({maxWidth: '300'});
+
+            
+                var html_dd27b5fbb995429fadcedcaec2249607 = $('<div id="html_dd27b5fbb995429fadcedcaec2249607" style="width: 100.0%; height: 100.0%;"><strong>Miami, Florida</strong><br>Change_from_Peak: <strong>-21.4</strong></div>')[0];
+                popup_343afecca4724ac69ab08fb022a11810.setContent(html_dd27b5fbb995429fadcedcaec2249607);
+            
+
+            circle_marker_fc08d18d4013420b9a013a276102eecc.bindPopup(popup_343afecca4724ac69ab08fb022a11810);
+
+            
+        
+    
+            var circle_marker_ca3d7fd7b110446b8c45cf139b53460c = L.circleMarker(
+                [43.0349931,-87.922497],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_50f4e8c081cc4a15a15c9ac9a245106f = L.popup({maxWidth: '300'});
+
+            
+                var html_6d2a37d937dd46f1aac3049935c3a888 = $('<div id="html_6d2a37d937dd46f1aac3049935c3a888" style="width: 100.0%; height: 100.0%;"><strong>Milwaukee, Wisconsin</strong><br>Change_from_Peak: <strong>-21.1</strong></div>')[0];
+                popup_50f4e8c081cc4a15a15c9ac9a245106f.setContent(html_6d2a37d937dd46f1aac3049935c3a888);
+            
+
+            circle_marker_ca3d7fd7b110446b8c45cf139b53460c.bindPopup(popup_50f4e8c081cc4a15a15c9ac9a245106f);
+
+            
+        
+    
+            var circle_marker_9c9e5cac79444239bc096a21047ad343 = L.circleMarker(
+                [44.9227049,-93.0554921701938],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_af259f88e15e4f58b125a48c2d2d48ef = L.popup({maxWidth: '300'});
+
+            
+                var html_d00852cbf9c34754b5e4572e90d4c78c = $('<div id="html_d00852cbf9c34754b5e4572e90d4c78c" style="width: 100.0%; height: 100.0%;"><strong>Minneapolis-St. Paul, Minnesota</strong><br>Change_from_Peak: <strong>-6.2</strong></div>')[0];
+                popup_af259f88e15e4f58b125a48c2d2d48ef.setContent(html_d00852cbf9c34754b5e4572e90d4c78c);
+            
+
+            circle_marker_9c9e5cac79444239bc096a21047ad343.bindPopup(popup_af259f88e15e4f58b125a48c2d2d48ef);
+
+            
+        
+    
+            var circle_marker_2c05f1cb0c364b46a948ea26dc1b370f = L.circleMarker(
+                [36.1622296,-86.7743531],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_6014e8c916014c93950860b96d5e5c37 = L.popup({maxWidth: '300'});
+
+            
+                var html_9e266fa0e80d43a7bdaccfd39faba9cc = $('<div id="html_9e266fa0e80d43a7bdaccfd39faba9cc" style="width: 100.0%; height: 100.0%;"><strong>Nashville, Tennessee</strong><br>Change_from_Peak: <strong>40.6</strong></div>')[0];
+                popup_6014e8c916014c93950860b96d5e5c37.setContent(html_9e266fa0e80d43a7bdaccfd39faba9cc);
+            
+
+            circle_marker_2c05f1cb0c364b46a948ea26dc1b370f.bindPopup(popup_6014e8c916014c93950860b96d5e5c37);
+
+            
+        
+    
+            var circle_marker_bf7a74e0d42e4ea69dcfeb509cb8e4c4 = L.circleMarker(
+                [30.03280175,-89.9750054503052],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_2d5d55c5e988483c88ab77124ab997e5 = L.popup({maxWidth: '300'});
+
+            
+                var html_23261a1a29164e70b61f21fdccf3d58b = $('<div id="html_23261a1a29164e70b61f21fdccf3d58b" style="width: 100.0%; height: 100.0%;"><strong>New Orleans, Louisiana</strong><br>Change_from_Peak: <strong>7.9</strong></div>')[0];
+                popup_2d5d55c5e988483c88ab77124ab997e5.setContent(html_23261a1a29164e70b61f21fdccf3d58b);
+            
+
+            circle_marker_bf7a74e0d42e4ea69dcfeb509cb8e4c4.bindPopup(popup_2d5d55c5e988483c88ab77124ab997e5);
+
+            
+        
+    
+            var circle_marker_5a5259c343fd4bb58fbda4698bd612a4 = L.circleMarker(
+                [40.7306458,-73.9866136],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_2bee9b9297e24091bfbc4dd2d804c2f5 = L.popup({maxWidth: '300'});
+
+            
+                var html_d2cf0852dd9b4c2eb09330be00cb4a09 = $('<div id="html_d2cf0852dd9b4c2eb09330be00cb4a09" style="width: 100.0%; height: 100.0%;"><strong>New York, New York</strong><br>Change_from_Peak: <strong>-8.1</strong></div>')[0];
+                popup_2bee9b9297e24091bfbc4dd2d804c2f5.setContent(html_d2cf0852dd9b4c2eb09330be00cb4a09);
+            
+
+            circle_marker_5a5259c343fd4bb58fbda4698bd612a4.bindPopup(popup_2bee9b9297e24091bfbc4dd2d804c2f5);
+
+            
+        
+    
+            var circle_marker_7a3a6afd38d44b81b119da479563ef07 = L.circleMarker(
+                [41.2230048,-111.9738429],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_42db257aa2de4c549d8cf8632f5b1e27 = L.popup({maxWidth: '300'});
+
+            
+                var html_941af379924e4a9cb8b512f3710e60b7 = $('<div id="html_941af379924e4a9cb8b512f3710e60b7" style="width: 100.0%; height: 100.0%;"><strong>Ogden, Utah</strong><br>Change_from_Peak: <strong>55.4</strong></div>')[0];
+                popup_42db257aa2de4c549d8cf8632f5b1e27.setContent(html_941af379924e4a9cb8b512f3710e60b7);
+            
+
+            circle_marker_7a3a6afd38d44b81b119da479563ef07.bindPopup(popup_42db257aa2de4c549d8cf8632f5b1e27);
+
+            
+        
+    
+            var circle_marker_22e7aea3499d4992b89b0e9f20ab8b5d = L.circleMarker(
+                [35.5377266,-97.5103397],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_910d06782fbe44adb0f5ad6899da26fd = L.popup({maxWidth: '300'});
+
+            
+                var html_427d6653d8444352a98bb1542075a33d = $('<div id="html_427d6653d8444352a98bb1542075a33d" style="width: 100.0%; height: 100.0%;"><strong>Oklahoma City, Oklahoma</strong><br>Change_from_Peak: <strong>19.1</strong></div>')[0];
+                popup_910d06782fbe44adb0f5ad6899da26fd.setContent(html_427d6653d8444352a98bb1542075a33d);
+            
+
+            circle_marker_22e7aea3499d4992b89b0e9f20ab8b5d.bindPopup(popup_910d06782fbe44adb0f5ad6899da26fd);
+
+            
+        
+    
+            var circle_marker_0b2949eb7a7742fa82257ef165533058 = L.circleMarker(
+                [41.2587317,-95.9378732],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_87b0017b5dd24c88bbeff85b7b3985c6 = L.popup({maxWidth: '300'});
+
+            
+                var html_1a292efcfcff4ba1960f7a5deff126c5 = $('<div id="html_1a292efcfcff4ba1960f7a5deff126c5" style="width: 100.0%; height: 100.0%;"><strong>Omaha, Nebraska</strong><br>Change_from_Peak: <strong>20.4</strong></div>')[0];
+                popup_87b0017b5dd24c88bbeff85b7b3985c6.setContent(html_1a292efcfcff4ba1960f7a5deff126c5);
+            
+
+            circle_marker_0b2949eb7a7742fa82257ef165533058.bindPopup(popup_87b0017b5dd24c88bbeff85b7b3985c6);
+
+            
+        
+    
+            var circle_marker_f976e9d35ab44a2393c6ea958ce06042 = L.circleMarker(
+                [28.5423999,-81.3794368],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_ebce9835f62d4f1a9a781e48304789e3 = L.popup({maxWidth: '300'});
+
+            
+                var html_de33280b4d774987bf13a260bb2dadd4 = $('<div id="html_de33280b4d774987bf13a260bb2dadd4" style="width: 100.0%; height: 100.0%;"><strong>Orlando, Florida</strong><br>Change_from_Peak: <strong>-24.8</strong></div>')[0];
+                popup_ebce9835f62d4f1a9a781e48304789e3.setContent(html_de33280b4d774987bf13a260bb2dadd4);
+            
+
+            circle_marker_f976e9d35ab44a2393c6ea958ce06042.bindPopup(popup_ebce9835f62d4f1a9a781e48304789e3);
+
+            
+        
+    
+            var circle_marker_a575a83978aa4e678142ca21deb29eae = L.circleMarker(
+                [34.1976308,-119.1803818],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_6f209f7a26a24b7b9228574c6b0ebbcb = L.popup({maxWidth: '300'});
+
+            
+                var html_3d961fe9196746cd8aae988e0f4dc06c = $('<div id="html_3d961fe9196746cd8aae988e0f4dc06c" style="width: 100.0%; height: 100.0%;"><strong>Oxnard, California</strong><br>Change_from_Peak: <strong>-13.2</strong></div>')[0];
+                popup_6f209f7a26a24b7b9228574c6b0ebbcb.setContent(html_3d961fe9196746cd8aae988e0f4dc06c);
+            
+
+            circle_marker_a575a83978aa4e678142ca21deb29eae.bindPopup(popup_6f209f7a26a24b7b9228574c6b0ebbcb);
+
+            
+        
+    
+            var circle_marker_f4ce4b523f204818bcaad4e4c1e833d1 = L.circleMarker(
+                [28.0331886,-80.6429695],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_53b96dcd7803470a9f2ef2cc81a950dd = L.popup({maxWidth: '300'});
+
+            
+                var html_4666e78a326a4a07b3f1e32162f614b2 = $('<div id="html_4666e78a326a4a07b3f1e32162f614b2" style="width: 100.0%; height: 100.0%;"><strong>Palm Bay, Florida</strong><br>Change_from_Peak: <strong>-20.4</strong></div>')[0];
+                popup_53b96dcd7803470a9f2ef2cc81a950dd.setContent(html_4666e78a326a4a07b3f1e32162f614b2);
+            
+
+            circle_marker_f4ce4b523f204818bcaad4e4c1e833d1.bindPopup(popup_53b96dcd7803470a9f2ef2cc81a950dd);
+
+            
+        
+    
+            var circle_marker_5986a0e6381d4e5480736d988add5b85 = L.circleMarker(
+                [30.421309,-87.2169149],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_06ad3ccafdc14ab49606e95cc98621b1 = L.popup({maxWidth: '300'});
+
+            
+                var html_9a165a5c3e474f7988a5b618691fb062 = $('<div id="html_9a165a5c3e474f7988a5b618691fb062" style="width: 100.0%; height: 100.0%;"><strong>Pensacola, Florida</strong><br>Change_from_Peak: <strong>-8.2</strong></div>')[0];
+                popup_06ad3ccafdc14ab49606e95cc98621b1.setContent(html_9a165a5c3e474f7988a5b618691fb062);
+            
+
+            circle_marker_5986a0e6381d4e5480736d988add5b85.bindPopup(popup_06ad3ccafdc14ab49606e95cc98621b1);
+
+            
+        
+    
+            var circle_marker_7346662e0a5b498fa8e8321cc8940d2a = L.circleMarker(
+                [39.9524152,-75.1635755],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_33bcd78b1fbb4b55ab827cb8aa6291ea = L.popup({maxWidth: '300'});
+
+            
+                var html_15f84578c99546d6ae79ec4cdb1c6f2d = $('<div id="html_15f84578c99546d6ae79ec4cdb1c6f2d" style="width: 100.0%; height: 100.0%;"><strong>Philadelphia, Pennsylvania</strong><br>Change_from_Peak: <strong>-10.8</strong></div>')[0];
+                popup_33bcd78b1fbb4b55ab827cb8aa6291ea.setContent(html_15f84578c99546d6ae79ec4cdb1c6f2d);
+            
+
+            circle_marker_7346662e0a5b498fa8e8321cc8940d2a.bindPopup(popup_33bcd78b1fbb4b55ab827cb8aa6291ea);
+
+            
+        
+    
+            var circle_marker_49a6b05fd1774cc09201929429fdb6d1 = L.circleMarker(
+                [33.4485866,-112.0773456],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_f53ff1d95dc6409a86440e4835606a92 = L.popup({maxWidth: '300'});
+
+            
+                var html_22adcf23d353453080e9c59615542a1b = $('<div id="html_22adcf23d353453080e9c59615542a1b" style="width: 100.0%; height: 100.0%;"><strong>Phoenix, Arizona</strong><br>Change_from_Peak: <strong>-18.1</strong></div>')[0];
+                popup_f53ff1d95dc6409a86440e4835606a92.setContent(html_22adcf23d353453080e9c59615542a1b);
+            
+
+            circle_marker_49a6b05fd1774cc09201929429fdb6d1.bindPopup(popup_f53ff1d95dc6409a86440e4835606a92);
+
+            
+        
+    
+            var circle_marker_bd5512843a154cdb946c28cbf772fa01 = L.circleMarker(
+                [40.4416941,-79.9900861],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_8c9ed44427274ab1a55742304bdd3e89 = L.popup({maxWidth: '300'});
+
+            
+                var html_0b6669b6e2c84c568a40ed76a63d18a8 = $('<div id="html_0b6669b6e2c84c568a40ed76a63d18a8" style="width: 100.0%; height: 100.0%;"><strong>Pittsburgh, Pennsylvania</strong><br>Change_from_Peak: <strong>7.8</strong></div>')[0];
+                popup_8c9ed44427274ab1a55742304bdd3e89.setContent(html_0b6669b6e2c84c568a40ed76a63d18a8);
+            
+
+            circle_marker_bd5512843a154cdb946c28cbf772fa01.bindPopup(popup_8c9ed44427274ab1a55742304bdd3e89);
+
+            
+        
+    
+            var circle_marker_f7579645f383420aabb1d4b159e1cacd = L.circleMarker(
+                [45.5202471,-122.6741949],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_ae225fc0677745efb82bc436ce7af243 = L.popup({maxWidth: '300'});
+
+            
+                var html_39e9045688c244f083870c8f688003c2 = $('<div id="html_39e9045688c244f083870c8f688003c2" style="width: 100.0%; height: 100.0%;"><strong>Portland, Oregon</strong><br>Change_from_Peak: <strong>30.9</strong></div>')[0];
+                popup_ae225fc0677745efb82bc436ce7af243.setContent(html_39e9045688c244f083870c8f688003c2);
+            
+
+            circle_marker_f7579645f383420aabb1d4b159e1cacd.bindPopup(popup_ae225fc0677745efb82bc436ce7af243);
+
+            
+        
+    
+            var circle_marker_02937a19d50c43f3a5234faaf662c648 = L.circleMarker(
+                [27.2939333,-80.3503283],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_73a6e30ecea246af9003fea5755d9117 = L.popup({maxWidth: '300'});
+
+            
+                var html_671f3018d4ec42bba9d5904dae8f43df = $('<div id="html_671f3018d4ec42bba9d5904dae8f43df" style="width: 100.0%; height: 100.0%;"><strong>Port St. Lucie, Florida</strong><br>Change_from_Peak: <strong>-18.6</strong></div>')[0];
+                popup_73a6e30ecea246af9003fea5755d9117.setContent(html_671f3018d4ec42bba9d5904dae8f43df);
+            
+
+            circle_marker_02937a19d50c43f3a5234faaf662c648.bindPopup(popup_73a6e30ecea246af9003fea5755d9117);
+
+            
+        
+    
+            var circle_marker_2a5f9c5c222d442b86f735464abea43b = L.circleMarker(
+                [41.8239891,-71.4128343],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_ced2d4c2c8e94492af34d14ce41d5b82 = L.popup({maxWidth: '300'});
+
+            
+                var html_6417c279724549d782faa8160af8b673 = $('<div id="html_6417c279724549d782faa8160af8b673" style="width: 100.0%; height: 100.0%;"><strong>Providence, Rhode Island</strong><br>Change_from_Peak: <strong>-25.2</strong></div>')[0];
+                popup_ced2d4c2c8e94492af34d14ce41d5b82.setContent(html_6417c279724549d782faa8160af8b673);
+            
+
+            circle_marker_2a5f9c5c222d442b86f735464abea43b.bindPopup(popup_ced2d4c2c8e94492af34d14ce41d5b82);
+
+            
+        
+    
+            var circle_marker_3a41a1a04061430082612aa577b20f4a = L.circleMarker(
+                [40.2338438,-111.6585337],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_53b7d78a7ed540b6832dade807499792 = L.popup({maxWidth: '300'});
+
+            
+                var html_b9a926e0451e40e0ab5918bd91b28250 = $('<div id="html_b9a926e0451e40e0ab5918bd91b28250" style="width: 100.0%; height: 100.0%;"><strong>Provo, Utah</strong><br>Change_from_Peak: <strong>42.6</strong></div>')[0];
+                popup_53b7d78a7ed540b6832dade807499792.setContent(html_b9a926e0451e40e0ab5918bd91b28250);
+            
+
+            circle_marker_3a41a1a04061430082612aa577b20f4a.bindPopup(popup_53b7d78a7ed540b6832dade807499792);
+
+            
+        
+    
+            var circle_marker_3656cf8d65604d26885a9cb580e6355c = L.circleMarker(
+                [35.7803977,-78.6390989],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_1fe30b847c2248d3baffe47d810f1e30 = L.popup({maxWidth: '300'});
+
+            
+                var html_fc7f32fd267b4c46abc2a690b21fc44b = $('<div id="html_fc7f32fd267b4c46abc2a690b21fc44b" style="width: 100.0%; height: 100.0%;"><strong>Raleigh, North Carolina</strong><br>Change_from_Peak: <strong>23.3</strong></div>')[0];
+                popup_1fe30b847c2248d3baffe47d810f1e30.setContent(html_fc7f32fd267b4c46abc2a690b21fc44b);
+            
+
+            circle_marker_3656cf8d65604d26885a9cb580e6355c.bindPopup(popup_1fe30b847c2248d3baffe47d810f1e30);
+
+            
+        
+    
+            var circle_marker_a7d46818364c4e01b7af1017c4f0f61e = L.circleMarker(
+                [39.52927,-119.8136744],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_531135f9b3ec426eaebfd4940ff50717 = L.popup({maxWidth: '300'});
+
+            
+                var html_a0482c46c87f45e0b16ed338814e95d4 = $('<div id="html_a0482c46c87f45e0b16ed338814e95d4" style="width: 100.0%; height: 100.0%;"><strong>Reno, Nevada</strong><br>Change_from_Peak: <strong>-10.0</strong></div>')[0];
+                popup_531135f9b3ec426eaebfd4940ff50717.setContent(html_a0482c46c87f45e0b16ed338814e95d4);
+            
+
+            circle_marker_a7d46818364c4e01b7af1017c4f0f61e.bindPopup(popup_531135f9b3ec426eaebfd4940ff50717);
+
+            
+        
+    
+            var circle_marker_d5d00d092b0941b9b09bb7542db2eaec = L.circleMarker(
+                [37.5385087,-77.43428],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_23ad07611beb405fac86c3f19e968d65 = L.popup({maxWidth: '300'});
+
+            
+                var html_570f8d0bd54646569e0c4d59dd7c82cd = $('<div id="html_570f8d0bd54646569e0c4d59dd7c82cd" style="width: 100.0%; height: 100.0%;"><strong>Richmond, Virginia</strong><br>Change_from_Peak: <strong>2.7</strong></div>')[0];
+                popup_23ad07611beb405fac86c3f19e968d65.setContent(html_570f8d0bd54646569e0c4d59dd7c82cd);
+            
+
+            circle_marker_d5d00d092b0941b9b09bb7542db2eaec.bindPopup(popup_23ad07611beb405fac86c3f19e968d65);
+
+            
+        
+    
+            var circle_marker_50994481c49d4da38840e05de686e2e7 = L.circleMarker(
+                [33.9533546,-117.3961623],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_636422a37bbd4f3796d19a317cae5a1a = L.popup({maxWidth: '300'});
+
+            
+                var html_7f1274f7401f48e7ab2655987cb8be6c = $('<div id="html_7f1274f7401f48e7ab2655987cb8be6c" style="width: 100.0%; height: 100.0%;"><strong>Riverside, California</strong><br>Change_from_Peak: <strong>-20.1</strong></div>')[0];
+                popup_636422a37bbd4f3796d19a317cae5a1a.setContent(html_7f1274f7401f48e7ab2655987cb8be6c);
+            
+
+            circle_marker_50994481c49d4da38840e05de686e2e7.bindPopup(popup_636422a37bbd4f3796d19a317cae5a1a);
+
+            
+        
+    
+            var circle_marker_eacbfb19937549f4b27292cb8e6a57fa = L.circleMarker(
+                [43.157285,-77.615214],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_4c3656d3ccef46dd92cf7e609258481e = L.popup({maxWidth: '300'});
+
+            
+                var html_e44a445f5197434fa7bbfc396e119db6 = $('<div id="html_e44a445f5197434fa7bbfc396e119db6" style="width: 100.0%; height: 100.0%;"><strong>Rochester, New York</strong><br>Change_from_Peak: <strong>7.3</strong></div>')[0];
+                popup_4c3656d3ccef46dd92cf7e609258481e.setContent(html_e44a445f5197434fa7bbfc396e119db6);
+            
+
+            circle_marker_eacbfb19937549f4b27292cb8e6a57fa.bindPopup(popup_4c3656d3ccef46dd92cf7e609258481e);
+
+            
+        
+    
+            var circle_marker_0f2d9e2c0839485dbbae6b3ac0c7f043 = L.circleMarker(
+                [38.5815719,-121.4943996],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_98ef582c611c47e093730582afd89279 = L.popup({maxWidth: '300'});
+
+            
+                var html_eba4b529f66f4f3e86661cbd51323b16 = $('<div id="html_eba4b529f66f4f3e86661cbd51323b16" style="width: 100.0%; height: 100.0%;"><strong>Sacramento, California</strong><br>Change_from_Peak: <strong>-13.0</strong></div>')[0];
+                popup_98ef582c611c47e093730582afd89279.setContent(html_eba4b529f66f4f3e86661cbd51323b16);
+            
+
+            circle_marker_0f2d9e2c0839485dbbae6b3ac0c7f043.bindPopup(popup_98ef582c611c47e093730582afd89279);
+
+            
+        
+    
+            var circle_marker_1af09e5535d94115af996ba232d8ece8 = L.circleMarker(
+                [40.7879394,-111.9783931],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_eda085cadd454025b6f7ce61cc4b6b9d = L.popup({maxWidth: '300'});
+
+            
+                var html_710b1cbedf954ed0871a56e0cc8d5a49 = $('<div id="html_710b1cbedf954ed0871a56e0cc8d5a49" style="width: 100.0%; height: 100.0%;"><strong>Salt Lake City, Utah</strong><br>Change_from_Peak: <strong>53.5</strong></div>')[0];
+                popup_eda085cadd454025b6f7ce61cc4b6b9d.setContent(html_710b1cbedf954ed0871a56e0cc8d5a49);
+            
+
+            circle_marker_1af09e5535d94115af996ba232d8ece8.bindPopup(popup_eda085cadd454025b6f7ce61cc4b6b9d);
+
+            
+        
+    
+            var circle_marker_730f0c9a3db74ceb99ee0d46c45858f5 = L.circleMarker(
+                [29.4246002,-98.4951405],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_2bf32f89d15c481c9f09f4d5ef9b0d6e = L.popup({maxWidth: '300'});
+
+            
+                var html_bce13439ea354fe2a8b126c034f1137b = $('<div id="html_bce13439ea354fe2a8b126c034f1137b" style="width: 100.0%; height: 100.0%;"><strong>San Antonio, Texas</strong><br>Change_from_Peak: <strong>35.8</strong></div>')[0];
+                popup_2bf32f89d15c481c9f09f4d5ef9b0d6e.setContent(html_bce13439ea354fe2a8b126c034f1137b);
+            
+
+            circle_marker_730f0c9a3db74ceb99ee0d46c45858f5.bindPopup(popup_2bf32f89d15c481c9f09f4d5ef9b0d6e);
+
+            
+        
+    
+            var circle_marker_5754ea369e554ab699e5da91c2319af0 = L.circleMarker(
+                [32.7174209,-117.1627714],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_b31d4bc4a9204ea1bf1baed36343e679 = L.popup({maxWidth: '300'});
+
+            
+                var html_1651c916bb264fdb9b77ff31e7080142 = $('<div id="html_1651c916bb264fdb9b77ff31e7080142" style="width: 100.0%; height: 100.0%;"><strong>San Diego, California</strong><br>Change_from_Peak: <strong>-1.3</strong></div>')[0];
+                popup_b31d4bc4a9204ea1bf1baed36343e679.setContent(html_1651c916bb264fdb9b77ff31e7080142);
+            
+
+            circle_marker_5754ea369e554ab699e5da91c2319af0.bindPopup(popup_b31d4bc4a9204ea1bf1baed36343e679);
+
+            
+        
+    
+            var circle_marker_d8cddcfeba774ede84777b4a16fbd615 = L.circleMarker(
+                [37.8199566,-122.3664933],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_e6dda5c90ac740ce95c943c7a13be3c2 = L.popup({maxWidth: '300'});
+
+            
+                var html_00689cde92224bccb4e9b9cbca9f3bf4 = $('<div id="html_00689cde92224bccb4e9b9cbca9f3bf4" style="width: 100.0%; height: 100.0%;"><strong>San Francisco, California</strong><br>Change_from_Peak: <strong>9.7</strong></div>')[0];
+                popup_e6dda5c90ac740ce95c943c7a13be3c2.setContent(html_00689cde92224bccb4e9b9cbca9f3bf4);
+            
+
+            circle_marker_d8cddcfeba774ede84777b4a16fbd615.bindPopup(popup_e6dda5c90ac740ce95c943c7a13be3c2);
+
+            
+        
+    
+            var circle_marker_6888041a233045f2956fa6e5988d743d = L.circleMarker(
+                [37.3361905,-121.8905833],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_0048e11e331c4e80b2e6159067c959b6 = L.popup({maxWidth: '300'});
+
+            
+                var html_1d2c1ba502bc4500bba0ff2312b927ed = $('<div id="html_1d2c1ba502bc4500bba0ff2312b927ed" style="width: 100.0%; height: 100.0%;"><strong>San Jose, California</strong><br>Change_from_Peak: <strong>26.9</strong></div>')[0];
+                popup_0048e11e331c4e80b2e6159067c959b6.setContent(html_1d2c1ba502bc4500bba0ff2312b927ed);
+            
+
+            circle_marker_6888041a233045f2956fa6e5988d743d.bindPopup(popup_0048e11e331c4e80b2e6159067c959b6);
+
+            
+        
+    
+            var circle_marker_17f55722ea644960846c496d412d8591 = L.circleMarker(
+                [38.4404675,-122.7144314],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_50d1780f2246451da3198e31954a3c97 = L.popup({maxWidth: '300'});
+
+            
+                var html_6bb682d474a64f2ca19e5636e0a5f1c3 = $('<div id="html_6bb682d474a64f2ca19e5636e0a5f1c3" style="width: 100.0%; height: 100.0%;"><strong>Santa Rosa, California</strong><br>Change_from_Peak: <strong>2.1</strong></div>')[0];
+                popup_50d1780f2246451da3198e31954a3c97.setContent(html_6bb682d474a64f2ca19e5636e0a5f1c3);
+            
+
+            circle_marker_17f55722ea644960846c496d412d8591.bindPopup(popup_50d1780f2246451da3198e31954a3c97);
+
+            
+        
+    
+            var circle_marker_e4ec402ce0d74439915ba7766ea68490 = L.circleMarker(
+                [27.3364347,-82.5306527],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_b86c5cd4b72a4b918296b228e059f4ee = L.popup({maxWidth: '300'});
+
+            
+                var html_5474306e4d56449db040c34afb8dbeed = $('<div id="html_5474306e4d56449db040c34afb8dbeed" style="width: 100.0%; height: 100.0%;"><strong>Sarasota, Florida</strong><br>Change_from_Peak: <strong>-19.0</strong></div>')[0];
+                popup_b86c5cd4b72a4b918296b228e059f4ee.setContent(html_5474306e4d56449db040c34afb8dbeed);
+            
+
+            circle_marker_e4ec402ce0d74439915ba7766ea68490.bindPopup(popup_b86c5cd4b72a4b918296b228e059f4ee);
+
+            
+        
+    
+            var circle_marker_1c5d97afde05409581792ed5d7eeb7b9 = L.circleMarker(
+                [41.4086874,-75.6621294],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_be848dd9b2664762b242cf9b455b5a93 = L.popup({maxWidth: '300'});
+
+            
+                var html_8d961464383b4614816c7870b281caff = $('<div id="html_8d961464383b4614816c7870b281caff" style="width: 100.0%; height: 100.0%;"><strong>Scranton, Pennsylvania</strong><br>Change_from_Peak: <strong>-25.3</strong></div>')[0];
+                popup_be848dd9b2664762b242cf9b455b5a93.setContent(html_8d961464383b4614816c7870b281caff);
+            
+
+            circle_marker_1c5d97afde05409581792ed5d7eeb7b9.bindPopup(popup_be848dd9b2664762b242cf9b455b5a93);
+
+            
+        
+    
+            var circle_marker_38e93fc9220c40b3ac72d15300ffbde1 = L.circleMarker(
+                [47.6038321,-122.3300624],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_3481d770765d4aa98f8c4a443cac5870 = L.popup({maxWidth: '300'});
+
+            
+                var html_f7aa0725cb304b5bac1c2d15d7e16e5d = $('<div id="html_f7aa0725cb304b5bac1c2d15d7e16e5d" style="width: 100.0%; height: 100.0%;"><strong>Seattle, Washington</strong><br>Change_from_Peak: <strong>34.4</strong></div>')[0];
+                popup_3481d770765d4aa98f8c4a443cac5870.setContent(html_f7aa0725cb304b5bac1c2d15d7e16e5d);
+            
+
+            circle_marker_38e93fc9220c40b3ac72d15300ffbde1.bindPopup(popup_3481d770765d4aa98f8c4a443cac5870);
+
+            
+        
+    
+            var circle_marker_0ef52b8fcd0a45ed8b6baf92bb8d3d8b = L.circleMarker(
+                [42.1014831,-72.589811],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_a57a08f432104d59afedaa96326037f0 = L.popup({maxWidth: '300'});
+
+            
+                var html_fae2ad11c0824d8eb390fd3567dafedb = $('<div id="html_fae2ad11c0824d8eb390fd3567dafedb" style="width: 100.0%; height: 100.0%;"><strong>Springfield, Massachusetts</strong><br>Change_from_Peak: <strong>-5.9</strong></div>')[0];
+                popup_a57a08f432104d59afedaa96326037f0.setContent(html_fae2ad11c0824d8eb390fd3567dafedb);
+            
+
+            circle_marker_0ef52b8fcd0a45ed8b6baf92bb8d3d8b.bindPopup(popup_a57a08f432104d59afedaa96326037f0);
+
+            
+        
+    
+            var circle_marker_3d17ccf990b7476993e78c5130b0dca3 = L.circleMarker(
+                [38.6529545,-90.2411165602464],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_1bd3078d6c6544d8b4674442ee5fe066 = L.popup({maxWidth: '300'});
+
+            
+                var html_af2d5c2b06c949cdbb54e71aa2d5f848 = $('<div id="html_af2d5c2b06c949cdbb54e71aa2d5f848" style="width: 100.0%; height: 100.0%;"><strong>St. Louis, Missouri</strong><br>Change_from_Peak: <strong>-14.3</strong></div>')[0];
+                popup_1bd3078d6c6544d8b4674442ee5fe066.setContent(html_af2d5c2b06c949cdbb54e71aa2d5f848);
+            
+
+            circle_marker_3d17ccf990b7476993e78c5130b0dca3.bindPopup(popup_1bd3078d6c6544d8b4674442ee5fe066);
+
+            
+        
+    
+            var circle_marker_15b1f1964ac54c559b486a44af71a02c = L.circleMarker(
+                [37.9577016,-121.2907796],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_53c5830e649c4c7c8cf95d1170dc10ae = L.popup({maxWidth: '300'});
+
+            
+                var html_7bb30710b1394db492d0eb53f9f4605e = $('<div id="html_7bb30710b1394db492d0eb53f9f4605e" style="width: 100.0%; height: 100.0%;"><strong>Stockton, California</strong><br>Change_from_Peak: <strong>-26.7</strong></div>')[0];
+                popup_53c5830e649c4c7c8cf95d1170dc10ae.setContent(html_7bb30710b1394db492d0eb53f9f4605e);
+            
+
+            circle_marker_15b1f1964ac54c559b486a44af71a02c.bindPopup(popup_53c5830e649c4c7c8cf95d1170dc10ae);
+
+            
+        
+    
+            var circle_marker_c18e49cead1244be9a89623736f07565 = L.circleMarker(
+                [43.0481221,-76.1474244],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_e2d8cf3c42fc4a29ab11e5a3a79a7588 = L.popup({maxWidth: '300'});
+
+            
+                var html_e472e8404ba64212b18a0edfb15a6c67 = $('<div id="html_e472e8404ba64212b18a0edfb15a6c67" style="width: 100.0%; height: 100.0%;"><strong>Syracuse, New York</strong><br>Change_from_Peak: <strong>2.8</strong></div>')[0];
+                popup_e2d8cf3c42fc4a29ab11e5a3a79a7588.setContent(html_e472e8404ba64212b18a0edfb15a6c67);
+            
+
+            circle_marker_c18e49cead1244be9a89623736f07565.bindPopup(popup_e2d8cf3c42fc4a29ab11e5a3a79a7588);
+
+            
+        
+    
+            var circle_marker_622029fde22e4f8598e71a9df304f25b = L.circleMarker(
+                [27.9477595,-82.458444],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_17d18e26dc2742f7ad13167dd149a42f = L.popup({maxWidth: '300'});
+
+            
+                var html_d029fecbd7d84ac48986cd64b347d966 = $('<div id="html_d029fecbd7d84ac48986cd64b347d966" style="width: 100.0%; height: 100.0%;"><strong>Tampa, Florida</strong><br>Change_from_Peak: <strong>-17.8</strong></div>')[0];
+                popup_17d18e26dc2742f7ad13167dd149a42f.setContent(html_d029fecbd7d84ac48986cd64b347d966);
+            
+
+            circle_marker_622029fde22e4f8598e71a9df304f25b.bindPopup(popup_17d18e26dc2742f7ad13167dd149a42f);
+
+            
+        
+    
+            var circle_marker_58234cd6780142718793a4b1d297bdea = L.circleMarker(
+                [41.6786754,-83.5127283],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_6ad9e7f57ccf4035845de94b4cbde883 = L.popup({maxWidth: '300'});
+
+            
+                var html_9acd8e01836b47e7a1394e4fc858b794 = $('<div id="html_9acd8e01836b47e7a1394e4fc858b794" style="width: 100.0%; height: 100.0%;"><strong>Toledo, Ohio</strong><br>Change_from_Peak: <strong>-18.6</strong></div>')[0];
+                popup_6ad9e7f57ccf4035845de94b4cbde883.setContent(html_9acd8e01836b47e7a1394e4fc858b794);
+            
+
+            circle_marker_58234cd6780142718793a4b1d297bdea.bindPopup(popup_6ad9e7f57ccf4035845de94b4cbde883);
+
+            
+        
+    
+            var circle_marker_8172ebc0fa024f83add0ac1fb48b0a3d = L.circleMarker(
+                [32.2218917,-110.9262353],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_ac77beae3a224277b55189f366c34562 = L.popup({maxWidth: '300'});
+
+            
+                var html_a5f6dc462e9e4aa7b1116f52782123d1 = $('<div id="html_a5f6dc462e9e4aa7b1116f52782123d1" style="width: 100.0%; height: 100.0%;"><strong>Tucson, Arizona</strong><br>Change_from_Peak: <strong>-20.3</strong></div>')[0];
+                popup_ac77beae3a224277b55189f366c34562.setContent(html_a5f6dc462e9e4aa7b1116f52782123d1);
+            
+
+            circle_marker_8172ebc0fa024f83add0ac1fb48b0a3d.bindPopup(popup_ac77beae3a224277b55189f366c34562);
+
+            
+        
+    
+            var circle_marker_b425b65eab47408aba177fba2369314b = L.circleMarker(
+                [36.1556805,-95.9929113],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_511893f117064ab1849402977fea6aad = L.popup({maxWidth: '300'});
+
+            
+                var html_463ec325c5a8474a958fe979003d6cf7 = $('<div id="html_463ec325c5a8474a958fe979003d6cf7" style="width: 100.0%; height: 100.0%;"><strong>Tulsa, Oklahoma</strong><br>Change_from_Peak: <strong>9.1</strong></div>')[0];
+                popup_511893f117064ab1849402977fea6aad.setContent(html_463ec325c5a8474a958fe979003d6cf7);
+            
+
+            circle_marker_b425b65eab47408aba177fba2369314b.bindPopup(popup_511893f117064ab1849402977fea6aad);
+
+            
+        
+    
+            var circle_marker_3c4f5ed52b3f47bea4d05d19cc9911e3 = L.circleMarker(
+                [36.8529841,-75.9774183],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_5711247a18364ffc838d51778cc70f36 = L.popup({maxWidth: '300'});
+
+            
+                var html_9df166802f3e447abf6e3f880ca0cd35 = $('<div id="html_9df166802f3e447abf6e3f880ca0cd35" style="width: 100.0%; height: 100.0%;"><strong>Virginia Beach, Virginia</strong><br>Change_from_Peak: <strong>-14.4</strong></div>')[0];
+                popup_5711247a18364ffc838d51778cc70f36.setContent(html_9df166802f3e447abf6e3f880ca0cd35);
+            
+
+            circle_marker_3c4f5ed52b3f47bea4d05d19cc9911e3.bindPopup(popup_5711247a18364ffc838d51778cc70f36);
+
+            
+        
+    
+            var circle_marker_d3a75824ff7541908ec52fb51c9dcef3 = L.circleMarker(
+                [38.8949549,-77.0366456],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_e7f78ccd15a947619ea6adb69b1b34d9 = L.popup({maxWidth: '300'});
+
+            
+                var html_c5974c11aecb4be68017b281e0e77e80 = $('<div id="html_c5974c11aecb4be68017b281e0e77e80" style="width: 100.0%; height: 100.0%;"><strong>Washington, DC</strong><br>Change_from_Peak: <strong>-17.0</strong></div>')[0];
+                popup_e7f78ccd15a947619ea6adb69b1b34d9.setContent(html_c5974c11aecb4be68017b281e0e77e80);
+            
+
+            circle_marker_d3a75824ff7541908ec52fb51c9dcef3.bindPopup(popup_e7f78ccd15a947619ea6adb69b1b34d9);
+
+            
+        
+    
+            var circle_marker_4846c385f4b242f8945d0cfce4b54382 = L.circleMarker(
+                [36.0998131,-80.2440518],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_e33da483a797476aadd664217e7400d5 = L.popup({maxWidth: '300'});
+
+            
+                var html_6dd6b39763e940139f1d36c03ae81512 = $('<div id="html_6dd6b39763e940139f1d36c03ae81512" style="width: 100.0%; height: 100.0%;"><strong>Winston-Salem, North Carolina</strong><br>Change_from_Peak: <strong>1.3</strong></div>')[0];
+                popup_e33da483a797476aadd664217e7400d5.setContent(html_6dd6b39763e940139f1d36c03ae81512);
+            
+
+            circle_marker_4846c385f4b242f8945d0cfce4b54382.bindPopup(popup_e33da483a797476aadd664217e7400d5);
+
+            
+        
+    
+            var circle_marker_7cc867eec31b445f9dd9efb43d64aac8 = L.circleMarker(
+                [41.1035786,-80.6520161],
+                {
+  "bubblingMouseEvents": true,
+  "color": "#3388ff",
+  "dashArray": null,
+  "dashOffset": null,
+  "fill": true,
+  "fillColor": "#3388ff",
+  "fillOpacity": 0.2,
+  "fillRule": "evenodd",
+  "lineCap": "round",
+  "lineJoin": "round",
+  "opacity": 1.0,
+  "radius": 5,
+  "stroke": true,
+  "weight": 3
+}
+                ).addTo(map_f48b8be0991f4aec8d79e153098f46d7);
+            
+    
+            var popup_321d8d3532fd4e168d456444547c951b = L.popup({maxWidth: '300'});
+
+            
+                var html_ea0df6bb3be440bca6f266ab59fc33a0 = $('<div id="html_ea0df6bb3be440bca6f266ab59fc33a0" style="width: 100.0%; height: 100.0%;"><strong>Youngstown, Ohio</strong><br>Change_from_Peak: <strong>-25.5</strong></div>')[0];
+                popup_321d8d3532fd4e168d456444547c951b.setContent(html_ea0df6bb3be440bca6f266ab59fc33a0);
+            
+
+            circle_marker_7cc867eec31b445f9dd9efb43d64aac8.bindPopup(popup_321d8d3532fd4e168d456444547c951b);
+
+            
+        
+</script>
