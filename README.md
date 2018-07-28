@@ -1,4 +1,4 @@
-## Projects
+## My Projects
 
 Project Name  |  Description
 -------------  |-------------
