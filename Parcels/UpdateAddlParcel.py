@@ -109,7 +109,7 @@ try:
     gdb = os.path.join(path, "parcels_bak.gdb\\")
     arcpy.CopyRows_management(layer6, gdb + "NewAddlParcel_" + date)
 
-    # Sake backup copy of GDB.AddlParcel
+    # Make backup copy of GDB.AddlParcel
     arcpy.AddMessage("Saving backup copy of GDB.AddlParcel to chnfil01a\gis\Temp\parcels\parcels_bak.gdb...")
     arcpy.CopyRows_management(addlParcel, gdb + "AddlParcel_bak_" + date, "")
 
